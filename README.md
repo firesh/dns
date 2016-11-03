@@ -2,15 +2,13 @@
 供墙内用户使用google youtube 都可以，有问题发issue
 
 ## 使用方法
-1. 首先安装好[docker](https://www.docker.com/products/docker#/mac)
-
-2. 启动dns服务
+- 1首先安装好[docker](https://www.docker.com/products/docker#/mac)
+- 2启动dns服务
 ```
 # 直接执行命令，不用拉取项目
 docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN firesh/dns --log-facility=-
 ```
-
-3. 设置dns，本机设置dns为127.0.0.1即可。
+- 3设置dns，本机设置dns为127.0.0.1即可。
 
 ## Build
 ```
