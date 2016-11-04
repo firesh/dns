@@ -16,6 +16,9 @@ docker build -t dns . &&\
 docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN dns --log-facility=-
 ```
 
+## 更新日志：
+20161103：google，youtube的老IP已无法访问，更新了新IP。已同步发到docker hub镜像。
+
 ## 申明
 - IP封一个少一个，仅供技术人员自行使用，请勿发布公网使用。
 - dnsmasq配置来源：[https://github.com/fengixng/google-hosts](https://github.com/fengixng/google-hosts)
