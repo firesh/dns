@@ -23,7 +23,7 @@ docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN dns --log
 ## 重新部署最新的dns服务步骤
 ```
 docker pull firesh/dns && \
-dockr rm -f dns && \
+docker rm -f dns && \
 docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN firesh/dns --log-facility=-
 ```
 
