@@ -13,7 +13,7 @@ docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN firesh/dn
 ## Build
 ```
 docker build -t dns . &&\
-docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN dns --log-facility=-
+docker run -d --name dns -p 53:53/tcp -p 53:53/udp --restart always --cap-add=NET_ADMIN dns --log-facility=-
 ```
 
 ## 更新日志：
@@ -25,7 +25,7 @@ docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN dns --log
 ```
 docker pull firesh/dns && \
 docker rm -f dns && \
-docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN firesh/dns --log-facility=-
+docker run -d --name dns -p 53:53/tcp -p 53:53/udp --restart always --cap-add=NET_ADMIN firesh/dns --log-facility=-
 ```
 
 ## 申明
