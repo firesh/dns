@@ -17,8 +17,9 @@ docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN dns --log
 ```
 
 ## 更新日志：
-20161103：google，youtube的老IP已无法访问，更新了新IP。已同步发到docker hub镜像。
+20161103: google，youtube的老IP已无法访问，更新了新IP。已同步发到docker hub镜像。
 20161121: google IP已经不稳定，更换新IP。
+20170307: 更新github使用的amazon s3地址
 
 ## 重新部署最新的dns服务步骤
 ```
