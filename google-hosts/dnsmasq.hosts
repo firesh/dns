@@ -29,3 +29,7 @@
 52.216.80.48	github-cloud.s3.amazonaws.com
 54.231.48.40	github-com.s3.amazonaws.com
 # Amazon AWS End
+
+# Github start
+192.30.253.118	gist.github.com
+# Github end
