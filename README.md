@@ -6,14 +6,14 @@
 - 2启动dns服务
 ```
 # 直接执行命令，不用拉取项目
-docker run -d --name dns -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN firesh/dns --log-facility=-
+docker run -d --name dns -p 53:53/tcp -p 53:53/udp --restart always --cap-add=NET_ADMIN firesh/dns --log-facility=-
 ```
 - 3设置dns，本机设置dns为127.0.0.1即可。
 
 ## Build
 ```
 docker build -t dns . &&\
-docker run -d --name dns -p 53:53/tcp -p 53:53/udp --restart always --cap-add=NET_ADMIN dns --log-facility=-
+docker run -d --name dns -p 53:53/tcp -p 53:53/udp --restart always --cap-add=NET_ADMIN firesh/dns --log-facility=-
 ```
 
 ## 更新日志：
