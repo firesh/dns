@@ -25,8 +25,8 @@ docker run -d --name dns -p 53:53/tcp -p 53:53/udp --restart always --cap-add=NE
 20170309: 增加gist.github.com地址
 20170314: 移除fonts.googleapis.com地址, 官方有国内ip的cdn
 20170627: 更新googleusercontents ip address
-20170706: 原google IP 不可用，已更新的IP
-20170925: 原google IP 不可用，已更新的IP
+20170706: 原google IP 不可用，已更新
+20170925: 原google IP 不可用，已更新
 ```
 
 ## 重新部署最新的dns服务步骤
