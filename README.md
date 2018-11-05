@@ -1,3 +1,5 @@
+## Deprecated. Recommend 蓝灯
+
 ## 说明
 供墙内用户使用google youtube 都可以，有问题发issue
 
